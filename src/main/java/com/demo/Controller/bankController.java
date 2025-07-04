@@ -30,6 +30,9 @@ public List<bankEntity> get2() {
 public String get3(@PathVariable String ifsccode) {
 	return bs.get3(ifsccode);
 }
-
+@GetMapping(value = "bank89")
+public String get3() {
+	return "Hello succfully";
+}
 }
 
